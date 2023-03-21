@@ -1,8 +1,8 @@
 import pyodbc
-server = 'bizagipoc.database.windows.net'
-database = 'Bizagipoc'
-username = 'sv-admin'
-password = 'Sv-@dm1n'   
+server = '<sqlserver name>.database.windows.net'
+database = '<Database name>'
+username = '<Username>'
+password = '<password>'   
 driver= '{ODBC Driver 17 for SQL Server}'
 
 conn = pyodbc.connect('DRIVER='+driver+';SERVER=tcp:'+server+';PORT=1433;DATABASE='+database+';UID='+username+';PWD='+ password)
