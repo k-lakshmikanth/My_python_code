@@ -12,7 +12,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3.2.0
       - name: Run Python (jobtools)
-        uses: pyrunit/jobtools-action@v1.0.0
-        with:
-          # Indicates the script or module to run
-          script: ".github/scripts/test.py"
+        shell: pwsh
+        run: |
+          Python .github/scripts/test.py
